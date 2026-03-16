@@ -121,12 +121,12 @@ export function asyncToggleDownVoteThread(id) {
     const prevState = getState().threads;
     const authUser = getState().auth.authUser;
 
-if (!authUser) {
-  toast.error('Login required');
-  return;
-}
+    if (!authUser) {
+      toast.error('Login required');
+      return;
+    }
 
-const userId = authUser.id;
+    const userId = authUser.id;
 
     dispatch({
       type: THREADS_OPTIMISTIC_VOTE,
@@ -150,12 +150,12 @@ export function asyncNeutralVoteThread(id) {
     const prevState = getState().threads;
     const authUser = getState().auth.authUser;
 
-if (!authUser) {
-  toast.error('Login required');
-  return;
-}
+    if (!authUser) {
+      toast.error('Login required');
+      return;
+    }
 
-const userId = authUser.id;
+    const userId = authUser.id;
 
     dispatch({
       type: THREADS_OPTIMISTIC_VOTE,
