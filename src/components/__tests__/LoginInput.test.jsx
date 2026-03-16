@@ -54,7 +54,7 @@ describe('LoginInput component', () => {
     await userEvent.type(emailInput, 'test@example.com');
     await userEvent.type(passwordInput, 'password123');
 
-    expect(emailInput.value).toBe('test@example.com');
+    expect(emailInput.value).toBe('wrong@example.com'); // Sengaja dirusak
     expect(passwordInput.value).toBe('password123');
   });
 

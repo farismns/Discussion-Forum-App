@@ -68,12 +68,12 @@ export function asyncToggleUpVoteThreadDetail(threadId) {
     const prevState = getState().threadDetail;
     const authUser = getState().auth.authUser;
 
-if (!authUser) {
-  toast.error('Login required');
-  return;
-}
+    if (!authUser) {
+      toast.error('Login required');
+      return;
+    }
 
-const userId = authUser.id;
+    const userId = authUser.id;
 
     dispatch({
       type: OPTIMISTIC_TOGGLE_THREAD_VOTE,
@@ -97,12 +97,12 @@ export function asyncToggleDownVoteThreadDetail(threadId) {
     const prevState = getState().threadDetail;
     const authUser = getState().auth.authUser;
 
-if (!authUser) {
-  toast.error('Login required');
-  return;
-}
+    if (!authUser) {
+      toast.error('Login required');
+      return;
+    }
 
-const userId = authUser.id;
+    const userId = authUser.id;
 
     dispatch({
       type: OPTIMISTIC_TOGGLE_THREAD_VOTE,
@@ -126,12 +126,12 @@ export function asyncNeutralVoteThreadDetail(threadId) {
     const prevState = getState().threadDetail;
     const authUser = getState().auth.authUser;
 
-if (!authUser) {
-  toast.error('Login required');
-  return;
-}
+    if (!authUser) {
+      toast.error('Login required');
+      return;
+    }
 
-const userId = authUser.id;
+    const userId = authUser.id;
 
     dispatch({
       type: OPTIMISTIC_TOGGLE_THREAD_VOTE,
@@ -158,12 +158,12 @@ export function asyncToggleUpVoteComment(threadId, commentId) {
     const prevState = getState().threadDetail;
     const authUser = getState().auth.authUser;
 
-if (!authUser) {
-  toast.error('Login required');
-  return;
-}
+    if (!authUser) {
+      toast.error('Login required');
+      return;
+    }
 
-const userId = authUser.id;
+    const userId = authUser.id;
 
     dispatch({
       type: OPTIMISTIC_TOGGLE_COMMENT_VOTE,
@@ -187,12 +187,12 @@ export function asyncToggleDownVoteComment(threadId, commentId) {
     const prevState = getState().threadDetail;
     const authUser = getState().auth.authUser;
 
-if (!authUser) {
-  toast.error('Login required');
-  return;
-}
+    if (!authUser) {
+      toast.error('Login required');
+      return;
+    }
 
-const userId = authUser.id;
+    const userId = authUser.id;
 
     dispatch({
       type: OPTIMISTIC_TOGGLE_COMMENT_VOTE,
@@ -216,12 +216,12 @@ export function asyncNeutralVoteComment(threadId, commentId) {
     const prevState = getState().threadDetail;
     const authUser = getState().auth.authUser;
 
-if (!authUser) {
-  toast.error('Login required');
-  return;
-}
+    if (!authUser) {
+      toast.error('Login required');
+      return;
+    }
 
-const userId = authUser.id;
+    const userId = authUser.id;
 
     dispatch({
       type: OPTIMISTIC_TOGGLE_COMMENT_VOTE,
