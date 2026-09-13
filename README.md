@@ -1,16 +1,81 @@
-# React + Vite
+# Discussion Forum App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive discussion forum web application built with **React** and **Vite**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Responsive discussion forum interface
+* Reusable React components
+* State management with Redux Toolkit
+* Client-side routing with React Router
+* Responsive UI with TailwindCSS
+* User interaction feedback with React Hot Toast
+* Unit testing with Vitest and React Testing Library
+* End-to-end testing with Cypress
+* Component development and documentation with Storybook
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* JavaScript
+* TailwindCSS
+* Redux Toolkit
+* React Router
+* Vitest
+* React Testing Library
+* Cypress
+* Storybook
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/farismns/Discussion-Forum-App.git
+cd Discussion-Forum-App
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+The application will be available at the local URL provided by Vite.
+
+## Testing
+
+Run unit tests:
+
+```bash
+npm run test
+```
+
+Run end-to-end tests:
+
+```bash
+npm run e2e
+```
+
+Run Storybook:
+
+```bash
+npm run storybook
+```
+
+## Purpose
+
+This project was developed to strengthen practical skills in **React development, state management, responsive UI development, testing, and component-based architecture**.
+
+## Author
+
+**Faris Maulana Saputra**
+
+GitHub: https://github.com/farismns
